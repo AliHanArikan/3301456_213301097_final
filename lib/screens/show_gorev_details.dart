@@ -3,7 +3,8 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 
-import '../Models/gorev.dart';
+
+import '../models/gorev.dart';
 
 class ShowGorevDetails extends StatefulWidget{
   @override

@@ -3,8 +3,9 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 
-import '../Models/gorev.dart';
+
 import '../data/db_helper.dart';
+import '../models/gorev.dart';
 
 class GorevEdit extends StatefulWidget{
   @override

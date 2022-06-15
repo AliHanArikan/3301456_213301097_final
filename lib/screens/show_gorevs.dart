@@ -2,13 +2,17 @@
 
 
 
-import 'package:arikan06/lib/screens/show_gorev_details.dart';
+//import 'package:arikan06/lib/screens/show_gorev_details.dart';
+
 import 'package:flutter/material.dart';
 
-import '../Models/gorev.dart';
+//import '../Models/gorev.dart';
 import '../data/db_helper.dart';
+
+import '../models/gorev.dart';
 import 'gorev_add.dart';
 import 'gorev_edit.dart';
+import 'show_gorev_details.dart';
 
 class ShowGorevs extends StatefulWidget{
   @override

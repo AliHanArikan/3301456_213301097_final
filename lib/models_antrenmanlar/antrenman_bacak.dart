@@ -1,4 +1,6 @@
-import 'package:arikan06/lib/models_antrenmanlar/antrenman.dart';
+
+
+import 'antrenman.dart';
 
 class AntrenmanBacak extends Antrenman {
   String? hareket_ismi;

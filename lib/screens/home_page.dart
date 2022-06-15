@@ -1,9 +1,16 @@
-import 'package:arikan06/lib/firebase_firestore_islemleri/veritabani_antrenman_kaydet.dart';
-import 'package:arikan06/lib/screens/giris_yap.dart';
-import 'package:arikan06/lib/screens/kayit_ol.dart';
-import 'package:arikan06/lib/screens/rutin_sec.dart';
-import 'package:arikan06/lib/screens/show_gorevs.dart';
+
+
 import 'package:flutter/material.dart';
+
+import '../firebase_firestore_islemleri/veritabani_antrenman_kaydet.dart';
+
+
+
+
+import 'giris_yap.dart';
+import 'kayit_ol.dart';
+import 'rutin_sec.dart';
+import 'show_gorevs.dart';
 
 class HomePage extends StatefulWidget {
   @override

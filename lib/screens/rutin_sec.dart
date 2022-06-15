@@ -1,7 +1,7 @@
-import 'package:arikan06/lib/antrenmanlar_screens/antrenman_bacak.dart';
-import 'package:arikan06/lib/screens/gorev_add.dart';
+
 import 'package:flutter/material.dart';
 
+import '../antrenmanlar_screens/antrenman_bacak.dart';
 import '../antrenmanlar_screens/antrenmanlar_kol.dart';
 
 class RutinSec extends StatefulWidget {

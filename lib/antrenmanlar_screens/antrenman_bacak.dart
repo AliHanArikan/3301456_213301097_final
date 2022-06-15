@@ -1,9 +1,10 @@
 import 'dart:ffi';
 
-import 'package:arikan06/lib/models_antrenmanlar/antrenman_bacak.dart';
+
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 
+import '../models_antrenmanlar/antrenman_bacak.dart';
 import '../models_antrenmanlar/antrenman_kol.dart';
 
 class AntrenmanBacakEkran extends StatefulWidget {

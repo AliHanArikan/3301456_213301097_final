@@ -6,7 +6,9 @@ import 'dart:async';
 import 'package:path/path.dart';
 import 'package:sqflite/sqflite.dart';
 
-import '../Models/gorev.dart';
+import '../models/gorev.dart';
+
+
 
 class DbHelper{
   Database? _db;
