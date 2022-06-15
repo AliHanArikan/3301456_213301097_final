@@ -1,18 +1,19 @@
 import 'package:arikan06/models_antrenmanlar/antrenman_omuz.dart';
+import 'package:arikan06/models_antrenmanlar/antrenman_sirt.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 
-class AntrenmanOmuzEkran extends StatefulWidget{
+class AntrenmanSirtEkran extends StatefulWidget{
   @override
   State<StatefulWidget> createState() {
     // TODO: implement createState
-    return _AntrenmanOmuzEkranState();
+    return _AntrenmanSirtEkranState();
   }
 
 }
 
-class _AntrenmanOmuzEkranState extends State{
-  AntrenmanOmuz hareketler = new AntrenmanOmuz();
+class _AntrenmanSirtEkranState extends State{
+  AntrenmanSirt hareketler = new AntrenmanSirt();
   @override
   Widget build(BuildContext context) {
     // TODO: implement build
@@ -32,7 +33,7 @@ class _AntrenmanOmuzEkranState extends State{
                 decoration: BoxDecoration(
                     border: Border.all(color: Colors.pink.shade200,width: 20),
                     image: DecorationImage(
-                        image: AssetImage("assets/images/body_workout.jpg"),
+                        image: AssetImage("assets/images/bodyyy.jpg"),
                         //image: NetworkImage(sayfaFotograflari[index].toString()),
                         fit: BoxFit.contain,
                         alignment: Alignment.topCenter)

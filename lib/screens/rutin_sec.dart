@@ -1,8 +1,12 @@
-
+import 'package:arikan06/antrenmanlar_screens/antrenmanlar_gogus.dart';
+import 'package:arikan06/antrenmanlar_screens/antrenmanlar_karin.dart';
+import 'package:arikan06/antrenmanlar_screens/antrenmanlar_sirt.dart';
+import 'package:arikan06/models_antrenmanlar/antrenman_sirt.dart';
 import 'package:flutter/material.dart';
 
 import '../antrenmanlar_screens/antrenman_bacak.dart';
 import '../antrenmanlar_screens/antrenmanlar_kol.dart';
+import '../antrenmanlar_screens/antrenmanlar_omuz.dart';
 
 class RutinSec extends StatefulWidget {
   @override
@@ -13,7 +17,14 @@ class RutinSec extends StatefulWidget {
 }
 
 class _RutinSecState extends State {
-  List<dynamic> sayfalar = [AntrenmanBacakEkran(), AntrenmanlarKol()];
+  List<dynamic> sayfalar = [
+    AntrenmanBacakEkran(),
+    AntrenmanlarKol(),
+    AntrenmanlarGogusEkran(),
+    AntrenmanSirtEkran(),
+    AntrenmanOmuzEkran(),
+    AntrenmanKarinEkran(),
+  ];
   List<dynamic> sayfaIsimleri = [
     "Bacak Antrenmanı",
     "Kol Antrenmanı",
@@ -64,11 +75,10 @@ class _RutinSecState extends State {
                       begin: Alignment.topCenter,
                       end: Alignment.bottomCenter),
                   image: DecorationImage(
-                      image: AssetImage("assets/images/body_workout.jpg"),
-                    //image: NetworkImage(sayfaFotograflari[index].toString()),
+                      image: AssetImage("assets/images/bodyyy.jpg"),
+                      //image: NetworkImage(sayfaFotograflari[index].toString()),
                       fit: BoxFit.contain,
-                      alignment: Alignment.topCenter)
-              ),
+                      alignment: Alignment.topCenter)),
               margin: EdgeInsets.all(20),
               child: Padding(
                 padding: EdgeInsets.all(10),
@@ -77,7 +87,7 @@ class _RutinSecState extends State {
                   textAlign: TextAlign.center,
                   style: TextStyle(
                       fontSize: 16,
-                     // color: Colors.pink,
+                      color: Colors.pink,
                       fontWeight: FontWeight.bold),
                 ),
               ),

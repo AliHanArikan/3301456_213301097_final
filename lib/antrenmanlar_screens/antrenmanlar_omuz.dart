@@ -32,7 +32,7 @@ class _AntrenmanOmuzEkranState extends State{
                 decoration: BoxDecoration(
                     border: Border.all(color: Colors.pink.shade200,width: 20),
                     image: DecorationImage(
-                        image: AssetImage("assets/images/body_workout.jpg"),
+                        image: AssetImage("assets/images/bodyyy.jpg"),
                         //image: NetworkImage(sayfaFotograflari[index].toString()),
                         fit: BoxFit.contain,
                         alignment: Alignment.topCenter)
@@ -54,5 +54,5 @@ class _AntrenmanOmuzEkranState extends State{
           }),
     );
   }
-  
+
 }

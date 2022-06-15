@@ -27,17 +27,19 @@ class _GorevAddState extends State {
         title: Text("Gorev ekle"),
         centerTitle: true,
       ),
-      body: Padding(
-        padding: EdgeInsets.all(10.0),
-        child: Center(
-          child: Column(
-            children: [
-              buildIsimField(),
-              buildAciklamaField(),
-              buildBaslangicZamaniField(),
-              buildBitisZamaniField(),
-              buildSaveButton(),
-            ],
+      body: SingleChildScrollView(
+        child: Padding(
+          padding: EdgeInsets.all(20.0),
+          child: Center(
+            child: Column(
+              children: [
+                buildIsimField(),
+                buildAciklamaField(),
+                buildBaslangicZamaniField(),
+                buildBitisZamaniField(),
+                buildSaveButton(),
+              ],
+            ),
           ),
         ),
       ),
@@ -47,34 +49,90 @@ class _GorevAddState extends State {
   buildIsimField() {
     return Container(
       
-      color: Colors.pink.shade200,
-      child: TextField(
-        style: TextStyle(fontWeight: FontWeight.bold),
-        cursorRadius: Radius.circular(20),
-        decoration: InputDecoration(labelText: "Gorev ismi"),
-        controller: txtIsim,
+
+      child: Padding(
+        padding: const EdgeInsets.all(8.0),
+        child: TextField(
+          style: TextStyle(fontWeight: FontWeight.bold),
+          cursorRadius: Radius.circular(20),
+          decoration: InputDecoration(
+              labelText: 'Gorev ismi',
+
+              prefixIcon: Icon(Icons.password),
+              //suffixIcon: Icon(Icons.access_alarm),
+
+              border: OutlineInputBorder(
+                  borderRadius:
+                  BorderRadius.all(Radius.circular(18.0)
+                  )
+              )
+          ),
+          controller: txtIsim,
+        ),
       ),
     );
   }
 
   buildAciklamaField() {
-    return TextField(
-      decoration: InputDecoration(labelText: "Gorev Aciklamasi"),
-      controller: txtAciklama,
+    return Padding(
+      padding: const EdgeInsets.all(8.0),
+      child: TextField(
+        decoration: InputDecoration(
+            labelText: 'Gorev Aciklamasi',
+
+            prefixIcon: Icon(Icons.password),
+            //suffixIcon: Icon(Icons.access_alarm),
+
+            border: OutlineInputBorder(
+                borderRadius:
+                BorderRadius.all(Radius.circular(18.0)
+                )
+            )
+        ),
+        controller: txtAciklama,
+      ),
     );
   }
 
   buildBaslangicZamaniField() {
-    return TextField(
-      decoration: InputDecoration(labelText: "Baslangic Zamani"),
-      controller: txtBaslangicZamani,
+    return Padding(
+      padding: const EdgeInsets.all(8.0),
+      child: TextField(
+        decoration: InputDecoration(
+            labelText: 'Baslangic zamani',
+
+            prefixIcon: Icon(Icons.password),
+            //suffixIcon: Icon(Icons.access_alarm),
+
+            border: OutlineInputBorder(
+                borderRadius:
+                BorderRadius.all(Radius.circular(18.0)
+                )
+            )
+        ),
+        controller: txtBaslangicZamani,
+      ),
     );
   }
 
   buildBitisZamaniField() {
-    return TextField(
-      decoration: InputDecoration(labelText: "Bitiş Zamani"),
-      controller: txtBitisZamani,
+    return Padding(
+      padding: const EdgeInsets.all(8.0),
+      child: TextField(
+        decoration: InputDecoration(
+            labelText: 'Bitis zamani',
+
+            prefixIcon: Icon(Icons.password),
+            //suffixIcon: Icon(Icons.access_alarm),
+
+            border: OutlineInputBorder(
+                borderRadius:
+                BorderRadius.all(Radius.circular(18.0)
+                )
+            )
+        ),
+        controller: txtBitisZamani,
+      ),
     );
   }
 

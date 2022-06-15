@@ -126,10 +126,10 @@ class _HomePageState extends State {
               children: [
                 Expanded(
                     child: Container(
-                        height: 200,
+                       height: 200,
                        child: FadeInImage.assetNetwork(
                            fit: BoxFit.cover,
-                           placeholder: 'assets/images/gif1.gif',
+                           placeholder: 'assets/images/gif4.gif',
                            image: url!
                        ),
                       //child: Image.network(url!),

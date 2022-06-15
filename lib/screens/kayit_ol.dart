@@ -77,7 +77,10 @@ class _KayitOlState extends State {
 
                           border: OutlineInputBorder(
                               borderRadius:
-                                  BorderRadius.all(Radius.circular(18.0)))),
+                                  BorderRadius.all(Radius.circular(18.0)
+                                  )
+                          )
+                      ),
                     ),
                   ),
                   ElevatedButton.icon(
