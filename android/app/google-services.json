@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "757799022149",
+    "project_id": "flutter-giris-yapma-uygulamasi",
+    "storage_bucket": "flutter-giris-yapma-uygulamasi.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:757799022149:android:a692cdfeb1720b6d96fd2c",
+        "android_client_info": {
+          "package_name": "com.example.arikan06"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "757799022149-4kqob80ddgh2ll1q6bcr865nackr62qc.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCbIbaj4sx4AlZCzZ58yheGahXt1g4Iihg"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "757799022149-4kqob80ddgh2ll1q6bcr865nackr62qc.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
