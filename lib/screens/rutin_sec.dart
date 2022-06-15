@@ -67,7 +67,8 @@ class _RutinSecState extends State {
                       image: AssetImage("assets/images/body_workout.jpg"),
                     //image: NetworkImage(sayfaFotograflari[index].toString()),
                       fit: BoxFit.contain,
-                      alignment: Alignment.topCenter)),
+                      alignment: Alignment.topCenter)
+              ),
               margin: EdgeInsets.all(20),
               child: Padding(
                 padding: EdgeInsets.all(10),

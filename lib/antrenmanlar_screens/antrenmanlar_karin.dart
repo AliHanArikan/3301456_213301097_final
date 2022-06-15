@@ -1,25 +1,18 @@
-import 'dart:ffi';
-
-
+import 'package:arikan06/models_antrenmanlar/antrenman_karin.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 
-import '../models_antrenmanlar/antrenman_bacak.dart';
-import '../models_antrenmanlar/antrenman_kol.dart';
-
-class AntrenmanBacakEkran extends StatefulWidget {
+class AntrenmanKarinEkran extends StatefulWidget{
   @override
   State<StatefulWidget> createState() {
     // TODO: implement createState
-    return _AntrenmanBacakState();
+    return _AntrenmanKarinEkranState();
   }
+
 }
 
-class _AntrenmanBacakState extends State {
-
-
-  AntrenmanBacak antrenmanBacak = new AntrenmanBacak();
-
+class _AntrenmanKarinEkranState extends State{
+  AntrenmanKarin antrenman = new AntrenmanKarin();
   @override
   Widget build(BuildContext context) {
     // TODO: implement build
@@ -29,12 +22,14 @@ class _AntrenmanBacakState extends State {
         centerTitle: true,
       ),
       body: GridView.builder(
-          itemCount: antrenmanBacak.hareketler.length,
+          itemCount: antrenman.hareketler.length,
           gridDelegate:
-              SliverGridDelegateWithFixedCrossAxisCount(crossAxisCount: 2),
+          SliverGridDelegateWithFixedCrossAxisCount(crossAxisCount: 2),
           itemBuilder: (BuildContext context, int index) {
             return GestureDetector(
+
               child: Container(
+
                 alignment: Alignment.bottomCenter,
                 decoration: BoxDecoration(
                   border: Border.all(color: Colors.pink.shade50, width: 20),
@@ -45,16 +40,19 @@ class _AntrenmanBacakState extends State {
                         alignment: Alignment.topCenter)
                 ),
                 child: Padding(
+
                   padding: EdgeInsets.all(10),
                   child: Text(
-                    antrenmanBacak.hareketler[index].toString(),
+                    antrenman.hareketler[index].toString(),
                     textAlign: TextAlign.center,
                     style: TextStyle(fontSize: 16, color: Colors.orange.shade200),
                   ),
+
                 ),
               ),
             );
           }),
     );
   }
+
 }

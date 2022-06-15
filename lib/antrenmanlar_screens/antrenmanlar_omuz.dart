@@ -1,25 +1,18 @@
-import 'dart:ffi';
-
-
+import 'package:arikan06/models_antrenmanlar/antrenman_omuz.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 
-import '../models_antrenmanlar/antrenman_bacak.dart';
-import '../models_antrenmanlar/antrenman_kol.dart';
-
-class AntrenmanBacakEkran extends StatefulWidget {
+class AntrenmanOmuzEkran extends StatefulWidget{
   @override
   State<StatefulWidget> createState() {
     // TODO: implement createState
-    return _AntrenmanBacakState();
+    return _AntrenmanOmuzEkranState();
   }
+
 }
 
-class _AntrenmanBacakState extends State {
-
-
-  AntrenmanBacak antrenmanBacak = new AntrenmanBacak();
-
+class _AntrenmanOmuzEkranState extends State{
+  AntrenmanOmuz hareketler = new AntrenmanOmuz();
   @override
   Widget build(BuildContext context) {
     // TODO: implement build
@@ -29,15 +22,15 @@ class _AntrenmanBacakState extends State {
         centerTitle: true,
       ),
       body: GridView.builder(
-          itemCount: antrenmanBacak.hareketler.length,
-          gridDelegate:
-              SliverGridDelegateWithFixedCrossAxisCount(crossAxisCount: 2),
-          itemBuilder: (BuildContext context, int index) {
+          itemCount: hareketler.hareketler.length,
+          gridDelegate: SliverGridDelegateWithFixedCrossAxisCount(
+              crossAxisCount: 2),
+          itemBuilder: (BuildContext context,int index){
             return GestureDetector(
               child: Container(
                 alignment: Alignment.bottomCenter,
                 decoration: BoxDecoration(
-                  border: Border.all(color: Colors.pink.shade50, width: 20),
+                    border: Border.all(color: Colors.pink.shade200,width: 20),
                     image: DecorationImage(
                         image: AssetImage("assets/images/body_workout.jpg"),
                         //image: NetworkImage(sayfaFotograflari[index].toString()),
@@ -47,9 +40,13 @@ class _AntrenmanBacakState extends State {
                 child: Padding(
                   padding: EdgeInsets.all(10),
                   child: Text(
-                    antrenmanBacak.hareketler[index].toString(),
+                    hareketler.hareketler[index].toString(),
                     textAlign: TextAlign.center,
-                    style: TextStyle(fontSize: 16, color: Colors.orange.shade200),
+                    style: TextStyle(
+                      //fontWeight: FontWeight.bold,
+                        fontSize: 20,
+                        color: Colors.orange.shade200
+                    ),
                   ),
                 ),
               ),
@@ -57,4 +54,5 @@ class _AntrenmanBacakState extends State {
           }),
     );
   }
+  
 }
